@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".Login_Activity">
+    tools:context=".Login_Activity"
+    android:background="@drawable/gradient_bg"
+    >
 
     <ImageView
         android:layout_width="320dp"
@@ -18,9 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="COBA LOGIN"
+        android:textColor="@color/white"
         android:gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:textSize="20sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"
         />
@@ -29,15 +32,26 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="username"
+        android:background="@drawable/et_corner"
+        android:textColor="@color/white"
         android:inputType="text"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/ic_people_24"
+        android:drawablePadding="12dp"
         />
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="6dp"
         android:hint="password"
+        android:background="@drawable/et_corner"
+        android:textColor="@color/white"
         android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:drawablePadding="12dp"
         />
 
     <com.google.android.material.button.MaterialButton
@@ -46,6 +60,8 @@
         android:layout_height="wrap_content"
         android:text="LOGIN"
         app:cornerRadius="16dp"
+        android:padding="6dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:backgroundTint="#03A9F4"
         android:layout_marginTop="30dp"
